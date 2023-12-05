@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "220217952422",
+    "project_id": "savior-d22f4",
+    "storage_bucket": "savior-d22f4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:220217952422:android:99da4b339179dbcf084c67",
+        "android_client_info": {
+          "package_name": "com.example.saviour"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuFQ9KRceEY0Fy5fr5NY1-8BJw3UcIDu8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
