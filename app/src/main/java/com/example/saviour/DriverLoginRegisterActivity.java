@@ -86,6 +86,7 @@ public class DriverLoginRegisterActivity extends AppCompatActivity {
             Toast.makeText(DriverLoginRegisterActivity.this, "Please write Password", Toast.LENGTH_SHORT).show();
 
         } else {
+            AppCompatActivity parent = this;
             loadingBar.setTitle("Driver Login");
             loadingBar.setMessage("Please wait,while we are checking your credentials..");
             loadingBar.show();
@@ -96,6 +97,8 @@ public class DriverLoginRegisterActivity extends AppCompatActivity {
                             if (task.isSuccessful()){
                                 Toast.makeText(DriverLoginRegisterActivity.this, "Driver Logged in Successfully...", Toast.LENGTH_SHORT).show();
                                 loadingBar.dismiss();
+                                Intent intent = new Intent(parent, AmbulanceTypeActivity.class);
+                                parent.startActivity(intent);
                             }
                             else {
                                 Toast.makeText(DriverLoginRegisterActivity.this, "Login Unsuccessful,Please try Again...", Toast.LENGTH_SHORT).show();

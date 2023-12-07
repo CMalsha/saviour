@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Saviour</string>
+    <string name="google_maps_key">AIzaSyD2Wty15KnL8TSbj3BMR_DK9G33sEMbQAI</string>
     <string name="title_activity_driver_map">DriverMapActivity</string>
     <string name="title_activity_drivers_map">DriversMapActivity</string>
     <string name="title_activity_maps">MapsActivity</string>

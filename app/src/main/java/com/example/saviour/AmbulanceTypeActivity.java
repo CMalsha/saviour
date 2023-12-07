@@ -1,5 +1,6 @@
 package com.example.saviour;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -20,20 +21,19 @@ public class AmbulanceTypeActivity extends AppCompatActivity {
         ambulanceTypeRadioGroup = findViewById(R.id.ambulanceTypeRadioGroup);
         selectButton = findViewById(R.id.selectButton);
 
-        selectButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                int selectedId = ambulanceTypeRadioGroup.getCheckedRadioButtonId();
+        selectButton.setOnClickListener(v -> {
+            int selectedId = ambulanceTypeRadioGroup.getCheckedRadioButtonId();
 
-                if (selectedId != -1) {
-                    RadioButton selectedRadioButton = findViewById(selectedId);
-                    String selectedAmbulanceType = selectedRadioButton.getText().toString();
+            if (selectedId != -1) {
+                RadioButton selectedRadioButton = findViewById(selectedId);
+                String selectedAmbulanceType = selectedRadioButton.getText().toString();
 
 
-                    showToast("Selected Ambulance Type: " + selectedAmbulanceType);
-                } else {
-                    showToast("Please select an ambulance type.");
-                }
+                showToast("Selected Ambulance Type: " + selectedAmbulanceType);
+                Intent intent = new Intent(this, DriverMapsActivity.class);
+                this.startActivity(intent);
+            } else {
+                showToast("Please select an ambulance type.");
             }
         });
     }
