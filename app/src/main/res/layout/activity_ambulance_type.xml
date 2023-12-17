@@ -44,24 +44,24 @@
         android:orientation="vertical">
 
         <RadioButton
-            android:id="@+id/normalAmbulanceRadioButton"
+            android:id="@+id/BasicLifeSupportRadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Normal Ambulance"
+            android:text="Basic Life Support"
             android:textSize="25sp" />
 
         <RadioButton
             android:id="@+id/advancedLifeSupportRadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" Life Support Ambulance"
+            android:text=" Advanced Life Support"
             android:textSize="25sp" />
 
         <RadioButton
-            android:id="@+id/airAmbulanceRadioButton"
+            android:id="@+id/patientTransportSupportRadioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Mini Ambulance"
+            android:text="Patient Transport Support"
             android:textSize="25sp" />
     </RadioGroup>
 

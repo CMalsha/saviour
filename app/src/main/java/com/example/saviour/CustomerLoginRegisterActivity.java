@@ -101,6 +101,7 @@ public class CustomerLoginRegisterActivity extends AppCompatActivity {
                             if (task.isSuccessful()) {
                                 Toast.makeText(CustomerLoginRegisterActivity.this, "Customer Login Successfully...", Toast.LENGTH_SHORT).show();
                                 loadingBar.dismiss();
+
                                 Intent AmbulanceTypeIntent = new Intent(CustomerLoginRegisterActivity.this,AmbulanceTypeActivity.class);
                                 startActivity(AmbulanceTypeIntent);
 

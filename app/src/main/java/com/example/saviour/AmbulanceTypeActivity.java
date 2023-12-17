@@ -28,7 +28,6 @@ public class AmbulanceTypeActivity extends AppCompatActivity {
                 RadioButton selectedRadioButton = findViewById(selectedId);
                 String selectedAmbulanceType = selectedRadioButton.getText().toString();
 
-
                 showToast("Selected Ambulance Type: " + selectedAmbulanceType);
                 Intent intent = new Intent(this, DriverMapsActivity.class);
                 this.startActivity(intent);
